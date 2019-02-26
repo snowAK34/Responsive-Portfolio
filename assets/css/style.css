@@ -1,0 +1,274 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-image: url(../images/greyzz_@2X.png);
+    height: 100%;
+}
+
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.page-wrap:after {
+    height: 50px;
+}
+
+
+/* This section for across the top of the page. */
+
+.upborder {
+    background-color: #ffffff;
+    border-bottom: solid 5px #cccccc;
+    margin: 0px 0px 30px 0px;
+    height: 85px;
+    width: 100%;
+}
+
+.top {
+    overflow: auto;
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    float: left;
+    background-color: #4aaaa5;
+    text-align: center;
+    height: 80px;
+    padding: 0px 15px 0px 15px;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 25px 10px 25px 10px;
+}
+
+#links {
+    float: right;
+    color: #777777;
+    font-family: Arial, 'Helvetica neue', Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    height: 100%;
+}
+
+#index {
+    float: left;
+    padding: 0px 10px 0px 10px;
+    border-right: solid 2px #777777;
+    margin: 35px 0px 35px 0px;
+    list-style-type: none;
+    width: 75px;
+}
+
+#portfolio {
+    float: left;
+    padding: 0px 10px 0px 10px;
+    border-right: solid 2px #777777;
+    margin: 35px 0px 35px 0px;
+    list-style-type: none;
+    width: 90px;
+}
+
+#contact {
+    float: left;
+    padding: 0px 0px 0px 10px;
+    margin: 35px 0px 35px 0px;
+    list-style-type: none;
+    width: 90px
+}
+
+a:hover {
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+
+/* Middle content of the page */
+
+.content {
+    clear:both;
+    width: 960px;
+    background-color: #ffffff;
+    border: solid thin #dddddd;
+    margin: 30px auto 30px auto;
+    padding: 20px;
+    position: relative;    
+}
+
+h2 {
+    color: #777777;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+p {
+    color: #777777;
+    font-family: Arial, 'Helvetica neue', Helvetica, sans-serif;
+    padding: 10px;
+}
+
+
+/* Content Elements only on index */
+
+#stacypic {
+    float: left;
+    height: 190px;
+    width: 150px;
+    margin: 20px;
+}
+
+
+/* Content Elements only on portfolio */
+
+#portcon {
+    height: 840px;
+}
+
+.portpic {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border: solid thin #777777;
+    opacity: 1;
+}
+
+.portpic:hover {
+    opacity: 0.5;
+}
+
+.label {
+    position: absolute;
+    bottom: 15px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Arial, 'Helvetica neue', Helvetica, sans-serif;
+}
+
+#pic1{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+#pic2 {
+    position: absolute;
+    top: 100px;
+    left: 260px;
+}
+
+#pic3 {
+    position: absolute;
+    top: 350px;
+    left: 20px;
+}
+
+#pic4 {
+    position: absolute;
+    top: 350px;
+    left: 260px;
+}
+
+#pic5 {
+    position: absolute;
+    top: 600px;
+    left: 20px;
+}
+
+
+/* Content Elements only on contact */
+
+form {
+    padding: 10px;
+    color: #777777;
+}
+
+input, textarea {
+    border: solid thin lightgrey;
+}
+
+#button {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    border: solid thin #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: large;
+    border-radius: 10px;
+    box-shadow: 0px 5px lightgrey;
+    position: relative;
+    font-family: Arial, 'Helvetica neue', Helvetica, sans-serif;
+}
+
+#button:active {
+    box-shadow: 0px 1px darkgrey;
+    top: 4px;
+}
+
+
+/* Footer across bottom of page */
+
+footer {
+    color: #777777;
+    font-family: Arial, 'Helvetica neue', Helvetica, sans-serif;
+    background-color: #666666;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: solid 8px #4aaaa5;
+    height: 50px;
+    width: 100%;
+}
+
+/* Media Queries; 980px, 768px, 640px */
+
+@media only screen and (max-width : 640px) {
+
+    .top, .content {
+        width: 100%;
+    }
+    header, #links, #stacypic {
+        float: none;
+    }
+    header {
+        position: static;
+        height: auto;
+    }
+    .upborder {
+        height: auto;
+    }
+    #pic1, #pic2, #pic3, #pic4, #pic5 {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    textarea {
+        max-width: 100%;
+    }
+
+    /* remove padding on individual links and center */
+    
+}
+
+@media only screen and (max-width : 768px) {
+    .top, .content {
+        width: 100%;
+    }
+}

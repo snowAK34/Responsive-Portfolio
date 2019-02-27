@@ -28,7 +28,6 @@ html, body {
 .upborder {
     background-color: #ffffff;
     border-bottom: solid 5px #cccccc;
-    margin: 0px 0px 30px 0px;
     height: 85px;
     width: 100%;
 }
@@ -53,17 +52,21 @@ h1 {
     padding: 25px 10px 25px 10px;
 }
 
+ul {
+    padding: 0;
+}
+
 #links {
     float: right;
     color: #777777;
     font-family: Arial, 'Helvetica neue', Helvetica, sans-serif;
     letter-spacing: 0.5px;
     height: 100%;
+    text-align: center;
 }
 
 #index {
-    float: left;
-    padding: 0px 10px 0px 10px;
+    display:inline-block;
     border-right: solid 2px #777777;
     margin: 35px 0px 35px 0px;
     list-style-type: none;
@@ -71,8 +74,8 @@ h1 {
 }
 
 #portfolio {
-    float: left;
-    padding: 0px 10px 0px 10px;
+    display:inline-block;
+    padding: 0px 10px 0px 8px;
     border-right: solid 2px #777777;
     margin: 35px 0px 35px 0px;
     list-style-type: none;
@@ -80,11 +83,12 @@ h1 {
 }
 
 #contact {
-    float: left;
-    padding: 0px 0px 0px 10px;
+    display:inline-block;
+    padding: 0px 0px 0px 8px;
+    border-right: solid 2px #ffffff;
     margin: 35px 0px 35px 0px;
     list-style-type: none;
-    width: 90px
+    width: 75px
 }
 
 a:hover {
@@ -239,7 +243,7 @@ footer {
 
 /* Media Queries; 980px, 768px, 640px */
 
-@media only screen and (max-width : 640px) {
+@media screen and (max-width : 640px) {
 
     .top, .content {
         width: 100%;
@@ -254,6 +258,9 @@ footer {
     .upborder {
         height: auto;
     }
+    #portcon {
+        overflow: auto;
+    }
     #pic1, #pic2, #pic3, #pic4, #pic5 {
         position: relative;
         top: auto;
@@ -263,11 +270,18 @@ footer {
         max-width: 100%;
     }
 
+
     /* remove padding on individual links and center */
     
 }
 
-@media only screen and (max-width : 768px) {
+@media screen and (max-width : 768px) {
+    .top, .content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 980px) {
     .top, .content {
         width: 100%;
     }
